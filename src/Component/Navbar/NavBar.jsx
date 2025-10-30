@@ -3,11 +3,12 @@ import React from 'react';
 const NavBar = () => {
     return (
 
-            <div className="navbar bg-base-100 flex justify-between max-w-[1250px] mx-auto my-5">
+            <div className=" bg-base-100 py-3">
+                <div className='navbar max-w-[1250px] mx-auto flex justify-between items-center'>
                 <div className="">
                     <a className="btn btn-ghost text-xl font-bold">CS — Ticket System</a>
                 </div>
-                <div className=" hidden lg:flex">
+                <div className="lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><a> Home</a></li>
                         <li><a>FAQ</a></li>
@@ -18,6 +19,7 @@ const NavBar = () => {
                     </ul>
                     <a className="btn bg bg-linear-65 from-[#632EE3] to-[#9F62F2] text-white"><span>+</span>  New Ticket</a>
                 </div>
+            </div>
             </div>
 
     );

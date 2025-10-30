@@ -1,0 +1,92 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login issue",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't access it.",
+    "customer": "John Doe",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-10-25"
+  },
+  {
+    "id": "#1002",
+    "title": "Payment failure",
+    "description": "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",
+    "customer": "Sarah Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2025-10-26"
+  },
+  {
+    "id": "#1003",
+    "title": "Password reset not working",
+    "description": "User is not receiving password reset emails and cannot log in to their account.",
+    "customer": "Michael Johnson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-10-27"
+  },
+  {
+    "id": "#1004",
+    "title": "Website loading slowly",
+    "description": "Pages take too long to load for the customer, affecting usability.",
+    "customer": "Emily Davis",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-10-28"
+  },
+  {
+    "id": "#1005",
+    "title": "Missing order details",
+    "description": "Customer cannot see recent purchases in their order history.",
+    "customer": "David Wilson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-10-28"
+  },
+  {
+    "id": "#1006",
+    "title": "App crash on startup",
+    "description": "Mobile app crashes immediately after the customer opens it.",
+    "customer": "Sophia Martinez",
+    "priority": "LOW PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2025-10-29"
+  },
+  {
+    "id": "#1007",
+    "title": "Incorrect billing amount",
+    "description": "Customer was charged twice for the same order and requests a refund.",
+    "customer": "James Brown",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-10-29"
+  },
+  {
+    "id": "#1008",
+    "title": "Feature request: Dark Mode",
+    "description": "Customer requested a dark mode option for better usability at night.",
+    "customer": "Olivia Taylor",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-10-29"
+  },
+  {
+    "id": "#1009",
+    "title": "Email notifications not received",
+    "description": "Customer reports that they are not getting any emails after placing orders.",
+    "customer": "Liam Anderson",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-10-30"
+  },
+  {
+    "id": "#1010",
+    "title": "Dashboard data outdated",
+    "description": "Customer notices analytics dashboard is showing old data even after refreshing.",
+    "customer": "Isabella Thomas",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-10-30"
+  }
+]
