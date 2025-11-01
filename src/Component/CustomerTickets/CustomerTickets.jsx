@@ -11,7 +11,7 @@ const CustomerTickets = ({ inProgress, customersPromise, hendelInProgress, resol
 
     return (
         <div>
-            <div className='max-w-[1200px] mx-auto flex'>
+            <div className='max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row '>
                 <div className='mb-20'>
                     <h1 className='font-semibold text-2xl pb-3'>Customer Tickets</h1>
 
@@ -21,7 +21,7 @@ const CustomerTickets = ({ inProgress, customersPromise, hendelInProgress, resol
                         }
                     </div>
                 </div>
-                <div>
+                <div className=''>
                     <div className='ml-8'>
                         <h1 className='font-semibold text-2xl pb-3'>Task Status</h1>
                         {

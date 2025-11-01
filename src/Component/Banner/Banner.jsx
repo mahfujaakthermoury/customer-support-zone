@@ -3,12 +3,10 @@ import React from 'react';
 
 const Banner = ({ inProgress, resolved }) => {
 
-//bg-[linear-gradient(65deg,#632EE3,#9F62F2),url('/path/to/image.png')] bg-cover bg-center bg-blend-overlay
-
   return (
-    <div className='max-w-[1200px] mx-auto my-15 flex text-white text-2xl'>
+    <div className=' max-w-[1200px] mx-auto my-15 text-white text-2xl flex flex-col lg:flex-row'>
 
-      <div className='grid place-content-center h-[220px] w-[650px] rounded-xl
+      <div className=' mb-5 grid place-content-center h-[220px] w-[650px] rounded-xl
         mr-5 bg-[linear-gradient(65deg,#632EE3,#9F62F2)] bg-cover bg-center relative'>
 
           <img src="/image/vector.png" alt="" className="absolute"  />
