@@ -1,29 +1,48 @@
-import React from 'react';
+
 import date from "../../assets/date.png"
 
-const CustomerTicket = ({ customer }) => {
-    console.log(customer)
+const CustomerTicket = ({ customer, hendelInProgress }) => {
+    //console.log(customer)
+
     return (
         <div>
-            <div className="card bg-base-100 w-[450px] rounded-sm shadow-sm">
+            <div onClick={() =>
+                hendelInProgress(customer)} className="cursor-pointer card bg-base-100 w-[430px] rounded-sm shadow-sm">
                 <div className="card-body">
                     <div className='flex items-center justify-between'>
-                        <h2 className="card-title">Card title!</h2>
-                        <div className='flex items-center bg-[#46df7c] px-3 py-1 rounded-4xl'>
-                            <div className='h-3  w-3 mr-2 rounded-full bg-[#02A53B]'></div>
-                            <h3>Open</h3>
+                        <h2 className="card-title">{customer.title}</h2>
+                        <div
+                            className={`flex items-center px-3 py-1 rounded-4xl ${customer.status === "Open"
+                                ? "bg-[#B9F8CF]" // green
+                                :
+                                "bg-[#F8F3B9]" // yellow              
+                                }`}
+                        >
+                            <div
+                                className={`h-3 w-3 mr-2 rounded-full ${customer.status === "Open"
+                                    ? "bg-[#02A53B]"
+                                    :
+                                    "bg-[#e1b600]"
+                                    }`}
+                            ></div>
+                            <h3>{customer.status}</h3>
                         </div>
                     </div>
-                    <p className='text-[#627382]'>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <p className='text-[#627382]'>{customer.description}</p>
                     <div className="flex justify-between text-[#627382]">
                         <div className='flex'>
-                            <p>#01</p>
-                            <p className='pl-2 text-yellow-400'>MEDIUM PRIORITY</p>
+                            <p>{customer.id}</p>
+                            <p className={`pl-2 ${customer.priority === "LOW PRIORITY"
+                                ? "text-[#02A53B]"
+                                : customer.priority === "MEDIUM PRIORITY"
+                                    ? "text-[#FEBB0C]"
+                                    : "text-[#F83044]"
+                                }`} >{customer.priority}</p>
                         </div>
                         <div className='flex'>
-                            <p>James Anderson</p>
+                            <p>{customer.customer}</p>
                             <img className='pr-1 pl-2' src={date} alt="" />
-                            <p>1/21/2024</p>
+                            <p>{customer.createdAt}</p>
                         </div>
                     </div>
                 </div>
