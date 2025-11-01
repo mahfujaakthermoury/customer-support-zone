@@ -1,6 +1,6 @@
 
 import './App.css'
-import NavBar from './Component/Navbar/navbar'
+import NavBar from './Component/NavBar/NavBar'
 import Footer from './Component/Footer/Footer'
 import Banner from './Component/Banner/Banner'
 import CustomerTickets from './Component/CustomerTickets/CustomerTickets'
